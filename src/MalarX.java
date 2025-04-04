@@ -87,7 +87,7 @@ public class MalarX extends JFrame {
 
     private String processImage(File imageFile) {
         String result = "Error"; // default
-        try (Socket socket = new Socket("10.0.0.34", 12345); // connect to server
+        try (Socket socket = new Socket("0.0.0.0", 12345); // connect to server
              OutputStream out = socket.getOutputStream();
              InputStream in = socket.getInputStream();
              DataOutputStream dos = new DataOutputStream(out);
